@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "点评",
+  "usingComponents": {
+    "van-rate": "/static/vant/rate/index"
+  }
+}

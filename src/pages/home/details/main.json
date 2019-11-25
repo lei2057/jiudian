@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "van-transition": "/static/vant/transition/index",
+    "van-popup": "/static/vant/popup/index",
+    "van-picker": "/static/vant/picker/index",
+    "van-tab": "/static/vant/tab/index",
+    "van-tabs": "/static/vant/tabs/index"
+  }
+}

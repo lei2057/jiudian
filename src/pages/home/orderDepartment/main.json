@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "查看启动日志",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "van-transition": "/static/vant/transition/index",
+    "van-popup": "/static/vant/popup/index",
+    "van-picker": "/static/vant/picker/index"
+  }
+}

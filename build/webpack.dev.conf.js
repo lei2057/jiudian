@@ -44,7 +44,8 @@ module.exports = merge(baseWebpackConfig, {
     // extract css into its own file
     new ExtractTextPlugin({
       // filename: utils.assetsPath('[name].[contenthash].css')
-      filename: utils.assetsPath(`[name].${config.dev.fileExt.style}`)
+      filename: utils.assetsPath(`[name].${config.dev.fileExt.style}`),
+      // allChunks: true//打包时call报错添加的参数
     }),
     // Compress extracted CSS. We are using this plugin so that possible
     // duplicated CSS from different components can be deduped.

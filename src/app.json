@@ -1,38 +1,75 @@
 {
   "pages": [
-    "pages/index/main",
-    "pages/logs/main",
-    "pages/counter/main"
+    "pages/home/index/main",
+    "pages/home/details/main",
+    "pages/home/order/main",
+    "pages/home/orderDepartment/main",
+    "pages/home/vipInfo/main",
+    "pages/home/service/main",
+    "pages/home/facilities/main",
+    "pages/home/coupon/main",
+    "pages/home/comment/main",
+    "pages/home/invoice/main",
+    "pages/home/time/main",
+    "pages/home/download/main",
+    "pages/home/webView/main",
+    "pages/order/index/main",
+    "pages/order/details/main",
+    "pages/order/detailsDepartment/main",
+    "pages/order/assess/main",
+    "pages/order/bill/main",
+    "pages/order/pay/main",
+    "pages/order/refund/main",
+    "pages/order/refundDetails/main",
+    "pages/my/index/main",
+    "pages/my/browse/main",
+    "pages/my/collect/main",
+    "pages/my/history/main",
+    "pages/my/comment/main",
+    "pages/my/commentDetails/main",
+    "pages/my/commentGo/main",
+    "pages/my/coupon/main",
+    "pages/my/usedInfo/main",
+    "pages/my/bill/main",
+    "pages/my/user/main",
+    "pages/my/idea/main",
+    "pages/my/invite/main",
+    "pages/my/inviteDetails/main",
+    "pages/my/jifen/main",
+    "pages/my/vip/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black",
-    "navigationStyle": "custom"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color": "#262626",
+    "color": "#626262",
     "backgroundColor": "#fff",
     "selectedColor": "#C0A369",
     "borderStyle": "white",
-
     "list": [{
       "text": "首页",
-      "pagePath": "pages/index/main",
+      "pagePath": "pages/home/index/main",
       "iconPath": "static/tabs/home.png",
       "selectedIconPath": "static/tabs/home-active.png"
     }, {
       "text": "订单",
-      "pagePath": "pages/logs/main",
+      "pagePath": "pages/order/index/main",
       "iconPath": "static/tabs/order.png",
       "selectedIconPath": "static/tabs/order-active.png"
     }, {
       "text": "我的",
-      "pagePath": "pages/counter/main",
+      "pagePath": "pages/my/index/main",
       "iconPath": "static/tabs/my.png",
       "selectedIconPath": "static/tabs/my-active.png"
     }],
     "position": "bottom"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
   }
 }

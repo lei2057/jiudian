@@ -1,24 +1,16 @@
-function formatNumber (n) {
-  const str = n.toString()
-  return str[1] ? str : `0${str}`
-}
-
-export function formatTime (date) {
-  const year = date.getFullYear()
-  const month = date.getMonth() + 1
-  const day = date.getDate()
-
-  const hour = date.getHours()
-  const minute = date.getMinutes()
-  const second = date.getSeconds()
-
-  const t1 = [year, month, day].map(formatNumber).join('/')
-  const t2 = [hour, minute, second].map(formatNumber).join(':')
-
-  return `${t1} ${t2}`
-}
+// 手机号验证
+let phoneReg = /^1[34578]\d{9}$/
+// 15或18位身份证验证
+let idCardReg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/
+// 当前时间
+let date = new Date()
+var Y = date.getFullYear() + '-'
+var M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-'
+var D = date.getDate() + ' '
+let dataTime = Y + M + D
 
 export default {
-  formatNumber,
-  formatTime
+  phoneReg,
+  idCardReg,
+  dataTime
 }

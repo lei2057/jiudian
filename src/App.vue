@@ -38,13 +38,13 @@ export default {
   -webkit-transition: width 2s;
   -o-transition: width 2s;
 }
-page {
-  height: 100%;
-  position: absolute;
-  background-color: #f9f9f9;
-}
 image {
   width: 100%;
   height: 100%;
+  display: block;
+}
+page {
+  height: 100%;
+  background-color: #f9f9f9;
 }
 </style>
